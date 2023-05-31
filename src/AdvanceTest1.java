@@ -27,7 +27,7 @@ import org.testng.asserts.SoftAssert;
 
 
 
-public class windowHandle {
+public class AdvanceTest1 {
 	static WebDriver driver;
 	public static void main(String[] args) throws InterruptedException, IOException {
 		
@@ -38,7 +38,7 @@ public class windowHandle {
 	By signinoption = By.xpath("//a[@data-nav-ref='nav_ya_signin']");
 	By signinButton=By.cssSelector(".nav-action-inner");
 	By countrylinkFooter=By.xpath("(//div[@class='navFooterLine navFooterLinkLine navFooterPadItemLine'])[2]");
-	By eachCountry=By.cssSelector(".nav_a");
+	By eachCountry=By.xpath(".//a[@class='nav_a']") ;//By.cssSelector(".nav_a");
 	
 	//System.setProperty("webdriver.chrome.driver","/Users/actgo/Eclipse/chromedriver.exe");
 	driver=new ChromeDriver();
@@ -97,7 +97,7 @@ public class windowHandle {
 	
 	public static void takeScreenshot(String title) throws IOException {
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String path=".\\actgo\\Eclipse\\SS\\"+title+System.currentTimeMillis()+".png";
+		String path=".\\SS\\"+title+System.currentTimeMillis()+".png";
 		FileUtils.copyFile(src,new File(path));
 		
 	}
