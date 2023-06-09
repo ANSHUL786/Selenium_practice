@@ -95,16 +95,29 @@ public class Advancetest2table {
 	List<String> productList = new ArrayList<>();
 	List<String> intermediateResult;
 	Collection<WebElement> nameList3;
-	while(driver.findElement(nextButton).getAttribute("aria-disabled").equals("false")) {
+	/*
+	 * while(driver.findElement(nextButton).getAttribute("aria-disabled").equals(
+	 * "false")) { nameList3=driver.findElements(productNameColumn);
+	 * intermediateResult=nameList3.stream().map(s->s.getText()).collect(Collectors.
+	 * toList()); productList.addAll(intermediateResult);
+	 * 
+	 * driver.findElement(nextButton).click(); }
+	 * nameList3=driver.findElements(productNameColumn);
+	 * intermediateResult=nameList3.stream().map(s->s.getText()).collect(Collectors.
+	 * toList()); productList.addAll(intermediateResult);
+	 */
+	
+	while(true) {
 		nameList3=driver.findElements(productNameColumn);
 		intermediateResult=nameList3.stream().map(s->s.getText()).collect(Collectors.toList());
 		productList.addAll(intermediateResult);
 		
-		driver.findElement(nextButton).click();	
+		System.out.println(productList);
+		if(driver.findElement(nextButton).getAttribute("aria-disabled").equals("true"))
+				break;
+		driver.findElement(nextButton).click();
 	}
-	nameList3=driver.findElements(productNameColumn);
-	intermediateResult=nameList3.stream().map(s->s.getText()).collect(Collectors.toList());
-	productList.addAll(intermediateResult);
+	
 	System.out.println(productList.size());
 	
 	
