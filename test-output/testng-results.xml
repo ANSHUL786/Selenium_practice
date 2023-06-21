@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T10:04:48 IST" name="Default suite" finished-at="2023-06-14T10:04:48 IST" duration-ms="85">
+  <suite started-at="2023-06-15T10:27:41 IST" name="Default suite" finished-at="2023-06-15T10:27:42 IST" duration-ms="107">
     <groups>
     </groups>
-    <test started-at="2023-06-14T10:04:48 IST" name="Default test" finished-at="2023-06-14T10:04:48 IST" duration-ms="85">
-      <class name="xyz">
-        <test-method signature="aesrddsf()[pri:-1, instance:xyz@1a942c18]" started-at="2023-06-14T10:04:48 IST" name="aesrddsf" finished-at="2023-06-14T10:04:48 IST" duration-ms="10" status="PASS">
+    <test started-at="2023-06-15T10:27:41 IST" name="Default test" finished-at="2023-06-15T10:27:42 IST" duration-ms="107">
+      <class name="xyz3">
+        <test-method signature="adserf()[pri:0, instance:xyz3@3c77d488]" started-at="2023-06-15T10:27:42 IST" name="adserf" finished-at="2023-06-15T10:27:42 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adserf -->
+        <test-method signature="aesrddsf()[pri:1, instance:xyz3@3c77d488]" started-at="2023-06-15T10:27:42 IST" name="aesrddsf" finished-at="2023-06-15T10:27:42 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aesrddsf -->
-        <test-method signature="adsf()[pri:0, instance:xyz@1a942c18]" started-at="2023-06-14T10:04:48 IST" name="adsf" finished-at="2023-06-14T10:04:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adsf -->
-      </class> <!-- xyz -->
+      </class> <!-- xyz3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
