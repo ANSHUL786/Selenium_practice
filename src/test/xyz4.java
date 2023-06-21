@@ -1,21 +1,22 @@
+package test;
 import org.testng.annotations.Test;
 
-public class xyz {
+public class xyz4 {
 
-	int i=1;
-	public void a1() {
-		System.out.println("BM");
-	}
 	
-	//@Test
+	@Test
 	public void adsf() {
 		String s="fdgh";
 		System.out.println(s.length());
 	}
-	//@Test (priority=-1)
+	@Test (priority=-1)
 	public void aesrddsf() {
 		String s="fdgvbvnh";
 		System.out.println(s.length());
+	}
+	
+	protected void dhgjsf() {
+		
 	}
 	
 }
