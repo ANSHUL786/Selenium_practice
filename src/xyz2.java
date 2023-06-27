@@ -1,7 +1,7 @@
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import test.*;
-public class xyz2  {
+public class xyz2 extends xyz4{
 
 	
 	int i=2;
@@ -84,8 +84,8 @@ public class xyz2  {
 		//xyz a=new xyz2();
 		//System.out.println(a.i);
 		//a.a1();
+		//a.c();
 		this.a1();
-		
-		//xyz3 a2= new xyz3();
+	
 	}
 	}

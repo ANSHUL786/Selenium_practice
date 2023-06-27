@@ -8,12 +8,12 @@ public class xyz {
 	}
 	
 	//@Test
-	public void adsf() {
+	protected void c() {
 		String s="fdgh";
 		System.out.println(s.length());
 	}
 	//@Test (priority=-1)
-	public void aesrddsf() {
+	public void b() {
 		String s="fdgvbvnh";
 		System.out.println(s.length());
 	}
